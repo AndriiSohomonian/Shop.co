@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://unpkg.com/tippy.js?v=1752401002594@6/dist/tippy.css?v=1752401002594">
+		<title>Shop.co</title>
+		<script type="module" crossorigin="" src="./js/productDetailIndex.min.js?v=1752401002594"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1752401002594">
+		<link rel="modulepreload" crossorigin="" href="./js/rating.min.js?v=1752401002594">
+		<link rel="modulepreload" crossorigin="" href="./js/quantity.min.js?v=1752401002594">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1752401002594">
+		<link rel="stylesheet" crossorigin="" href="./css/rating.min.css?v=1752401002594">
+		<link rel="stylesheet" crossorigin="" href="./css/quantity.min.css?v=1752401002594">
+		<link rel="stylesheet" crossorigin="" href="./css/productDetailIndex.min.css?v=1752401002594">
+		<link rel="stylesheet" crossorigin="" href="./css/checkbox.min.css?v=1752401002594">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header-scroll="" data-fls-header-scroll-show="" data-fls-header="" class="header">
+				<div class="header__container">
+					<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"test"}'></include> -->
+					<!-- logo -->
+					<div class="header__logo">
+						<a href="index.html" data-fls-dynamic=".header__logo,788,2,.header__container">shop.co</a>
+					</div>
+					<!-- menu -->
+					<div data-fls-dynamic=".header__logo,788,0,.header__container" class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<!-- пк -->
+								<li class="menu__item menu__parent">
+									<button class="menu__link sub">Shop</button>
+									<ul class="sub-menu__list">
+										<li class="sub-menu__wrap">
+											<ul>
+												<li class="sub-menu__item">
+													<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#top-selling" class="sub-menu__link">Top Selling</a>
+												</li>
+												<li id="sub2" class="sub-menu__item menu__parent">
+													<button data-fls-scrollto-header="" data-fls-scrollto="#dress-style" class="sub-menu__link sub">Dress Style</button>
+													<ul class="sub-menu__list">
+														<li class="sub-menu__wrap">
+															<ul>
+																<li class="sub-menu__item">
+																	<a href="categoryIndex.html?style=casual" class="sub-menu__link">Casual</a>
+																</li>
+																<li class="sub-menu__item">
+																	<a href="categoryIndex.html?style=formal" class="sub-menu__link">Formal</a>
+																</li>
+																<li class="sub-menu__item">
+																	<a href="categoryIndex.html?style=party" class="sub-menu__link">Party</a>
+																</li>
+																<li class="sub-menu__item">
+																	<a href="categoryIndex.html?style=gym" class="sub-menu__link">Gym</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li class="sub-menu__item">
+													<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#happy-customers" class="sub-menu__link">Happy Customers</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<!-- mobile -->
+								<li data-fls-spollers="" class="menu__item spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">Shop</summary>
+										<div class="spollers__wrap">
+											<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#top-selling" class="spollers__body">Top Selling</a>
+											<div data-fls-spollers="" class="spollers sub2">
+												<details class="spollers__item">
+													<summary class="spollers__title">Dress Style</summary>
+													<div class="spollers__wrap">
+														<a href="categoryIndex.html?style=casual" class="spollers__body">Casual</a>
+														<a href="categoryIndex.html?style=formal" class="spollers__body">Formal</a>
+														<a href="categoryIndex.html?style=party" class="spollers__body">Party</a>
+														<a href="categoryIndex.html?style=gym" class="spollers__body">Gym</a>
+													</div>
+												</details>
+											</div>
+											<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#happy-customers" class="spollers__body">Happy Customers</a>
+										</div>
+									</details>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">On Sale</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#new-arrivals" class="menu__link">New Arrivals</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#brands" class="menu__link">Brands</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!-- search -->
+					<!-- actions -->
+					<div class="header__actions actions-header">
+						<form action="#" class="header-search">
+							<span id="search-icon-header" class="search-header__icon --icon-search"></span>
+							<input data-fls-input="" required autocomplete="off" type="text" name="form[]" placeholder="Search for products..." class="search-header__input input">
+						</form>
+						<a href="cartIndex.html" class="actions-header__item --icon-cart">
+							<span class="cart-active --hiden"></span>
+						</a>
+						<a href="#" class="actions-header__item --icon-accaunt"></a>
+					</div>
+					<form action="#" class="header-search__search-mobile">
+						<input data-fls-input="" required autocomplete="off" type="text" name="form[]" placeholder="Search for products..." class="search-mobile__input input">
+						<button type="submit" id="search" class="--icon-arrow"></button>
+					</form>
+				</div>
+				<script src="https://unpkg.com/@popperjs/core@2"></script>
+				<script src="https://unpkg.com/tippy.js?v=1752401002594@6/dist/tippy-bundle.umd.min.js?v=1752401002594"></script>
+			</header>
+			<main class="page page--productDetail">
+				<div class="wrapper">
+					<section class="page-detail detail">
+						<div class="detail__container">
+							<div class="detail__address">
+								<a href="index.html">Home</a>
+								<span>
+									<a href="categoryIndex.html">Shop</a>
+								</span>
+								<span class="detail__address-span"></span>
+							</div>
+							<section class="detail__product-wrapper">
+								<div class="detail__images">
+									<!-- Оболонка слайдера -->
+									<div data-fls-slider="" class="clothes-slider">
+										<!-- Прев’юшки -->
+										<div class="clothes-swiper thumbs-slider">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img class="currentImage" src="" alt="image">
+												</div>
+												<div class="swiper-slide">
+													<img src="assets/img/h2.jpg" alt="image">
+												</div>
+												<div class="swiper-slide">
+													<img src="assets/img/h3.jpg" alt="image">
+												</div>
+											</div>
+										</div>
+										<!-- Головний слайдер -->
+										<div class="clothes-swiper main-slider">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img class="currentImage" src="" alt="image">
+												</div>
+												<div class="swiper-slide">
+													<img src="assets/img/h2.jpg" alt="image">
+												</div>
+												<div class="swiper-slide">
+													<img src="assets/img/h3.jpg" alt="image">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="detail__description">
+									<h2 class="detail__title"></h2>
+									<div class="cards__rating">
+										<span class="rating-didgital">4.5/5</span>
+									</div>
+									<div class="cards__price">$120</div>
+									<div class="detail__about">
+										This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.
+									</div>
+									<form action="#" class="detail__choese-wrapper">
+										<!-- color -->
+										<div data-fls-radio="" class="detail__color color">
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="Green" name="form[color]">
+												<span id="green" class="checkbox__text"></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="Red" name="form[color]">
+												<span id="red" class="checkbox__text"></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="Yelow" name="form[color]">
+												<span id="yelow" class="checkbox__text"></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="Orange" name="form[color]">
+												<span id="orange" class="checkbox__text"></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="Skyblue" name="form[color]">
+												<span id="skyblue" class="checkbox__text"></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="Blue" name="form[color]">
+												<span id="blue" class="checkbox__text"></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="Purple" name="form[color]">
+												<span id="purple" class="checkbox__text"></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="Pink" name="form[color]">
+												<span id="pink" class="checkbox__text"></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" checked type="radio" value="White" name="form[color]">
+												<span id="white" class="checkbox__text"></span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="Black" name="form[color]">
+												<span id="black" class="checkbox__text"></span>
+											</label>
+										</div>
+										<!-- size -->
+										<div data-fls-radio="" class="detail__prise size">
+											<label data-fls-checkbox="" class="checkbox">
+												<input class="checkbox__input" checked type="radio" value="XX-Small" name="form[size]">
+												<span class="checkbox__text">XX-Small</span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="X-Small" name="form[size]">
+												<span class="checkbox__text">X-Small</span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="Small" name="form[size]">
+												<span class="checkbox__text">Small</span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="Medium" name="form[size]">
+												<span class="checkbox__text">Medium</span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="Large" name="form[size]">
+												<span class="checkbox__text">Large</span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="X-Large" name="form[size]">
+												<span class="checkbox__text">X-Large</span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="XX-Large" name="form[size]">
+												<span class="checkbox__text">XX-Large</span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="3X-Large" name="form[size]">
+												<span class="checkbox__text">3X-Large</span>
+											</label>
+											<label class="checkbox">
+												<input class="checkbox__input" type="radio" value="4X-Large" name="form[size]">
+												<span class="checkbox__text">4X-Large</span>
+											</label>
+										</div>
+										<div class="detail__add-to-cart-wrapper">
+											<div data-fls-quantity="" class="quantity">
+												<button data-fls-quantity-minus="" type="button" class="quantity__button quantity__button--minus"></button>
+												<div class="quantity__input">
+													<input data-fls-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+												</div>
+												<button data-fls-quantity-plus="" type="button" class="quantity__button quantity__button--plus"></button>
+											</div>
+											<button type="button" class="detail__button" data-fls-button="">Add to Cart</button>
+										</div>
+									</form>
+								</div>
+							</section>
+							<section class="detail__reviews">
+								<div class="reviews__header">
+									<div class="header__title">
+										All Reviews
+										<span>(451)</span>
+									</div>
+									<button type="button" class="header__write-review">Write a Review</button>
+								</div>
+								<div data-fls-showmore="" class="detail__reviews-more">
+									<div class="detail__reviews-items">
+										<!-- Слайд 1 -->
+										<div class="review__slide">
+											<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+											<div class="review__name">
+												Sarah M.
+												<span class="review__name-confirmed --icon-greenCheckMark"></span>
+											</div>
+											<div class="review__rew">
+												"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+											</div>
+										</div>
+										<!-- -2- -->
+										<div class="review__slide">
+											<div data-fls-rating="set" data-fls-rating-value="4.5" class="review__stars"></div>
+											<div class="review__name">
+												Alex K.
+												<span class="review__name-confirmed --icon-greenCheckMark"></span>
+											</div>
+											<div class="review__rew">
+												"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”
+											</div>
+										</div>
+										<!-- -3- -->
+										<div class="review__slide">
+											<div data-fls-rating="set" data-fls-rating-value="3" class="review__stars"></div>
+											<div class="review__name">
+												James L.
+												<span class="review__name-confirmed --icon-greenCheckMark"></span>
+											</div>
+											<div class="review__rew">
+												"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+											</div>
+										</div>
+										<!-- -4- -->
+										<div class="review__slide">
+											<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+											<div class="review__name">
+												Emily R.
+												<span class="review__name-confirmed --icon-greenCheckMark"></span>
+											</div>
+											<div class="review__rew">
+												“I’ve never felt more confident in my outfits until I started shopping at Shop.co. Their collections are stylish, high-quality, and super flattering.”
+											</div>
+										</div>
+										<!-- -5- -->
+										<div class="review__slide">
+											<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+											<div class="review__name">
+												Michael T.
+												<span class="review__name-confirmed --icon-greenCheckMark"></span>
+											</div>
+											<div class="review__rew">
+												“Shop.co makes online shopping so easy and enjoyable. The clothes look exactly like the pictures and fit perfectly!”
+											</div>
+										</div>
+										<!-- -6- -->
+										<div class="review__slide">
+											<div data-fls-rating="set" data-fls-rating-value="4" class="review__stars"></div>
+											<div class="review__name">
+												Lara N.
+												<span class="review__name-confirmed --icon-greenCheckMark"></span>
+											</div>
+											<div class="review__rew">
+												“Every time I wear something from Shop.co, I get compliments. Their pieces are modern, comfortable, and affordable.”
+											</div>
+										</div>
+									</div>
+									<!-- show more -->
+									<div data-fls-showmore-content="0" class="detail__reviews-more-content">
+										<div class="detail__reviews-items">
+											<!-- -7- -->
+											<div class="review__slide">
+												<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+												<div class="review__name">
+													Mike L.
+													<span class="review__name-confirmed --icon-greenCheckMark"></span>
+												</div>
+												<div class="review__rew">
+													“The attention to detail in each item is amazing. You can really tell Shop.co cares about quality and design.”
+												</div>
+											</div>
+											<!-- -8- -->
+											<div class="review__slide">
+												<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+												<div class="review__name">
+													Stefan k.
+													<span class="review__name-confirmed --icon-greenCheckMark"></span>
+												</div>
+												<div class="review__rew">
+													“I love how versatile their collections are. Whether it’s for work or a night out, I can always count on Shop.co.”
+												</div>
+											</div>
+											<!-- -3- -->
+											<div class="review__slide">
+												<div data-fls-rating="set" data-fls-rating-value="2" class="review__stars"></div>
+												<div class="review__name">
+													James L.
+													<span class="review__name-confirmed --icon-greenCheckMark"></span>
+												</div>
+												<div class="review__rew">
+													"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+												</div>
+											</div>
+											<!-- -4- -->
+											<div class="review__slide">
+												<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+												<div class="review__name">
+													Emily R.
+													<span class="review__name-confirmed --icon-greenCheckMark"></span>
+												</div>
+												<div class="review__rew">
+													“I’ve never felt more confident in my outfits until I started shopping at Shop.co. Their collections are stylish, high-quality, and super flattering.”
+												</div>
+											</div>
+										</div>
+									</div>
+									<button hidden data-fls-showmore-button="" type="button" class="detail__reviews-button">
+										<span>Load More Reviews</span>
+										<span>Hide Reviews</span>
+									</button>
+								</div>
+							</section>
+							<!-- review end -->
+							<!-- You might also like -->
+							<section id="also-like" class="also-like">
+								<div class="also-like__title">You might also like</div>
+								<div class="also-like__content">
+									<div class="cards cards__items"><!-- ---------------- --></div>
+								</div>
+							</section>
+						</div>
+					</section>
+					<!-- You might also like end -->
+					<div id="cart-success-toast" class="cart-toast">
+						<div class="cart-toast__icon">
+							<span class="checkmark"></span>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<section class="latest-offers">
+						<div class="latest-offers__title">STAY UP TO DATE ABOUT OUR LATEST OFFERS</div>
+						<div class="latest-offers__email email">
+							<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail" class="email__form">
+								<div class="email__icon-wrap">
+									<input required type="email" name="form[email]" data-fls-form-errtext="" placeholder="Enter your email address" class="email__input input">
+									<span class="email__icon --icon-mail"></span>
+								</div>
+								<button type="submit" class="email__btn button">Subscribe to Newsletter</button>
+							</form>
+						</div>
+					</section>
+					<div class="footer__links links">
+						<div class="links__shop-co">
+							<div class="links__logo">
+								<a href="#">SHOP.CO</a>
+							</div>
+							<div class="links__text">
+								We have clothes that suits your style and which you’re proud to wear. From women to men.
+							</div>
+							<div class="links__media">
+								<a href="#" class="links__twiter --icon-twiter"></a>
+								<a href="#" class="links__facebook --icon-facebook"></a>
+								<a href="#" class="links__insta --icon-instagram"></a>
+								<a href="#" class="links__gitHub --icon-gitHab"></a>
+							</div>
+						</div>
+						<div class="links__categories">
+							<ul class="links__list">
+								<li class="links__title">Company</li>
+								<li class="links__item">
+									<a href="#">About</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Features</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Works</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Career</a>
+								</li>
+							</ul>
+							<ul class="links__list">
+								<li class="links__title">Help</li>
+								<li class="links__item">
+									<a href="#">Customer Support</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Delivery Details</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Terms & Conditions</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Privacy Policy</a>
+								</li>
+							</ul>
+							<ul class="links__list">
+								<li class="links__title">faq</li>
+								<li class="links__item">
+									<a href="#">Account</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Manage Deliveries</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Orders</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Payments</a>
+								</li>
+							</ul>
+							<ul class="links__list">
+								<li class="links__title">resources</li>
+								<li class="links__item">
+									<a href="#">Free eBooks</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Development Tutorial</a>
+								</li>
+								<li class="links__item">
+									<a href="#">How to - Blog</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Youtube Playlist</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__end end">
+						<div class="end__text">Shop.co © 2000-2023, All Rights Reserved</div>
+						<div class="end__payment">
+							<div class="end__payment-item">
+								<img class="end__payment-img-pbg" src="assets/img/visa.png" alt="visa">
+							</div>
+							<div class="end__payment-item">
+								<img class="end__payment-img-pbg" src="assets/img/master.png" alt="master">
+							</div>
+							<div class="end__payment-item">
+								<img class="end__payment-img-pbg" src="assets/img/paypal.png" alt="paypal">
+							</div>
+							<div class="end__payment-item">
+								<img class="end__payment-img-pbg" src="assets/img/applepay.png" alt="applepay">
+							</div>
+							<div class="end__payment-item">
+								<img class="end__payment-img-pbg" src="assets/img/googlepay.png" alt="googlepay">
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
