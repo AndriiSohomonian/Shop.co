@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://unpkg.com/tippy.js?v=1752410145620@6/dist/tippy.css?v=1752410145620">
+		<title>Shop.co</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1752410145620"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1752410145620">
+		<link rel="modulepreload" crossorigin="" href="./js/rating.min.js?v=1752410145620">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1752410145620">
+		<link rel="stylesheet" crossorigin="" href="./css/rating.min.css?v=1752410145620">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752410145620">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header-scroll="" data-fls-header-scroll-show="" data-fls-header="" class="header">
+				<div class="header__container">
+					<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"Home"}'></include> -->
+					<!-- logo -->
+					<div class="header__logo">
+						<a href="index.html" data-fls-dynamic=".header__logo,788,2,.header__container">shop.co</a>
+					</div>
+					<!-- menu -->
+					<div data-fls-dynamic=".header__logo,788,0,.header__container" class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<!-- пк -->
+								<li class="menu__item menu__parent">
+									<button class="menu__link sub">Shop</button>
+									<ul class="sub-menu__list">
+										<li class="sub-menu__wrap">
+											<ul>
+												<li class="sub-menu__item">
+													<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#top-selling" class="sub-menu__link">Top Selling</a>
+												</li>
+												<li id="sub2" class="sub-menu__item menu__parent">
+													<button data-fls-scrollto-header="" data-fls-scrollto="#dress-style" class="sub-menu__link sub">Dress Style</button>
+													<ul class="sub-menu__list">
+														<li class="sub-menu__wrap">
+															<ul>
+																<li class="sub-menu__item">
+																	<a href="categoryIndex.html?style=casual" class="sub-menu__link">Casual</a>
+																</li>
+																<li class="sub-menu__item">
+																	<a href="categoryIndex.html?style=formal" class="sub-menu__link">Formal</a>
+																</li>
+																<li class="sub-menu__item">
+																	<a href="categoryIndex.html?style=party" class="sub-menu__link">Party</a>
+																</li>
+																<li class="sub-menu__item">
+																	<a href="categoryIndex.html?style=gym" class="sub-menu__link">Gym</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li class="sub-menu__item">
+													<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#happy-customers" class="sub-menu__link">Happy Customers</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<!-- mobile -->
+								<li data-fls-spollers="" class="menu__item spollers">
+									<details class="spollers__item">
+										<summary class="spollers__title">Shop</summary>
+										<div class="spollers__wrap">
+											<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#top-selling" class="spollers__body">Top Selling</a>
+											<div data-fls-spollers="" class="spollers sub2">
+												<details class="spollers__item">
+													<summary class="spollers__title">Dress Style</summary>
+													<div class="spollers__wrap">
+														<a href="categoryIndex.html?style=casual" class="spollers__body">Casual</a>
+														<a href="categoryIndex.html?style=formal" class="spollers__body">Formal</a>
+														<a href="categoryIndex.html?style=party" class="spollers__body">Party</a>
+														<a href="categoryIndex.html?style=gym" class="spollers__body">Gym</a>
+													</div>
+												</details>
+											</div>
+											<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#happy-customers" class="spollers__body">Happy Customers</a>
+										</div>
+									</details>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">On Sale</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#new-arrivals" class="menu__link">New Arrivals</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#brands" class="menu__link">Brands</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!-- search -->
+					<!-- actions -->
+					<div class="header__actions actions-header">
+						<form action="#" class="header-search">
+							<span id="search-icon-header" class="search-header__icon --icon-search"></span>
+							<input data-fls-input="" required autocomplete="off" type="text" name="form[]" placeholder="Search for products..." class="search-header__input input">
+						</form>
+						<a href="cartIndex.html" class="actions-header__item --icon-cart">
+							<span class="cart-active --hiden"></span>
+						</a>
+						<a href="#" class="actions-header__item --icon-accaunt"></a>
+					</div>
+					<form action="#" class="header-search__search-mobile">
+						<input data-fls-input="" required autocomplete="off" type="text" name="form[]" placeholder="Search for products..." class="search-mobile__input input">
+						<button type="submit" id="search" class="--icon-arrow"></button>
+					</form>
+				</div>
+				<script src="https://unpkg.com/@popperjs/core@2"></script>
+				<script src="https://unpkg.com/tippy.js?v=1752410145620@6/dist/tippy-bundle.umd.min.js?v=1752410145620"></script>
+			</header>
+			<main class="page page--home">
+				<section class="first-page">
+					<div class="first-page__container">
+						<div class="first-page__content">
+							<div class="content-information">
+								<div class="content-information__title">FIND CLOTHES THAT MATCHES YOUR STYLE</div>
+								<div class="content-information__text">
+									Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+								</div>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#new-arrivals" class="content-information__button">Shop Now</a>
+								<div class="content-information__statistic">
+									<div class="statistic-items">
+										<div class="statistic-items__item">
+											<div class="statistic-item__number">200+</div>
+											<div class="statistic-item__text">International Brands</div>
+										</div>
+									</div>
+									<div class="statistic-items">
+										<div class="statistic-items__item">
+											<div class="statistic-item__number">2,000+</div>
+											<div class="statistic-item__text">High-Quality Products</div>
+										</div>
+									</div>
+									<div class="statistic-items">
+										<div class="statistic-items__item">
+											<div class="statistic-item__number">30,000+</div>
+											<div class="statistic-item__text">Happy Customers</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-images">
+								<img data-fls-image-ignore="" class="content-images__image" src="./assets/img/girlAndBoyFirstPage.png" alt="Girl and boy">
+							</div>
+						</div>
+					</div>
+					<div id="brands" class="first-page__footer">
+						<!-- 105   px -->
+						<ul class="footer__items" data-fls-marquee="" data-fls-marquee-speed="200" data-fls-marquee-direction="right">
+							<li class="footer__item --icon-versace"></li>
+							<li class="footer__item --icon-zara"></li>
+							<li class="footer__item --icon-gucci"></li>
+							<li class="footer__item --icon-prada"></li>
+							<li class="footer__item --icon-calvin"></li>
+						</ul>
+					</div>
+				</section>
+				<section id="new-arrivals" class="new-arrivals">
+					<div class="new-arrivals__container">
+						<div class="new-arrivals__title">NEW ARRIVALS</div>
+						<div class="new-arrivals__content">
+							<div class="cards cards__items">
+								<!-- --приклад-- -->
+								<!--
+<a href="#" class="cards__item">
+<div class="cards__image">
+<img src="assets/img/tShortBlack.jpg" alt="T-SHIRT WITH TAPE DETAILS">
+</div>
+<div class="cards__title">T-SHIRT WITH TAPE DETAILS</div>
+<div class="cards__rating">
+<div data-fls-rating="set" data-fls-rating-value="4.5" class="rating"></div>
+<span class="rating-didgital">4.5/5</span>
+</div>
+<div class="cards__price">$120</div>
+</a>
+-->
+								<!-- ---------------- -->
+							</div>
+							<button class="cards__view-all">View All</button>
+						</div>
+					</div>
+				</section>
+				<section id="top-selling" class="top-selling">
+					<div class="top-selling__container">
+						<div class="top-selling__title">TOP SELLING</div>
+						<div class="top-selling__content">
+							<div class="cards cards__items"><!-- ---------------- --></div>
+							<button class="cards__view-all">View All</button>
+						</div>
+					</div>
+				</section>
+				<section id="dress-style" class="dress-style">
+					<div class="dress-style__container">
+						<div class="dress-style__content">
+							<div class="dress-style__title">BROWSE BY DRESS STYLE</div>
+							<div class="dress-style__items">
+								<div class="dress-style__row">
+									<a href="categoryIndex.html?style=casual" class="dress-style__item">
+										<div class="dress-style__text">Casual</div>
+										<div class="dress-style__image">
+											<img data-fls-image-ignore="" src="./assets/img/casual.png" alt="Casual">
+										</div>
+									</a>
+									<a href="categoryIndex.html?style=formal" class="dress-style__item">
+										<div class="dress-style__text">Formal</div>
+										<div class="dress-style__image">
+											<img data-fls-image-ignore="" src="./assets/img/formal.png" alt="Formal">
+										</div>
+									</a>
+								</div>
+								<div class="dress-style__row">
+									<a href="categoryIndex.html?style=gym" class="dress-style__item">
+										<div class="dress-style__text">Gym</div>
+										<div class="dress-style__image">
+											<img data-fls-image-ignore="" src="./assets/img/gym.png" alt="Gym">
+										</div>
+									</a>
+									<a href="categoryIndex.html?style=party" class="dress-style__item">
+										<div class="dress-style__text">Party</div>
+										<div class="dress-style__image">
+											<img data-fls-image-ignore="" src="./assets/img/party.png" alt="Party">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="happy-customers" class="happy-customers">
+					<div class="happy-customers__content">
+						<!-- Оболонка слайдера -->
+						<div data-fls-slider="" class="happy-customers__slider swiper">
+							<div class="happy-customers__header __container">
+								<div class="happy-customers__title">OUR HAPPY CUSTOMERS</div>
+								<div class="happy-customers__arrows">
+									<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+									<button type="button" class="swiper-button-prev --icon-arrow"></button>
+									<button type="button" class="swiper-button-next --icon-arrow"></button>
+								</div>
+							</div>
+							<!-- Частина слайдера, що рухається -->
+							<div class="happy-customers__wrapper swiper-wrapper">
+								<!-- Слайд 1 -->
+								<div class="review__slide swiper-slide">
+									<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+									<div class="review__name">
+										Sarah M.
+										<span class="review__name-confirmed --icon-greenCheckMark"></span>
+									</div>
+									<div class="review__rew">
+										"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+									</div>
+								</div>
+								<!-- -2- -->
+								<div class="review__slide swiper-slide">
+									<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+									<div class="review__name">
+										Alex K.
+										<span class="review__name-confirmed --icon-greenCheckMark"></span>
+									</div>
+									<div class="review__rew">
+										"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”
+									</div>
+								</div>
+								<!-- -3- -->
+								<div class="review__slide swiper-slide">
+									<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+									<div class="review__name">
+										James L.
+										<span class="review__name-confirmed --icon-greenCheckMark"></span>
+									</div>
+									<div class="review__rew">
+										"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”
+									</div>
+								</div>
+								<!-- -4- -->
+								<div class="review__slide swiper-slide">
+									<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+									<div class="review__name">
+										Emily R.
+										<span class="review__name-confirmed --icon-greenCheckMark"></span>
+									</div>
+									<div class="review__rew">
+										“I’ve never felt more confident in my outfits until I started shopping at Shop.co. Their collections are stylish, high-quality, and super flattering.”
+									</div>
+								</div>
+								<!-- -5- -->
+								<div class="review__slide swiper-slide">
+									<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+									<div class="review__name">
+										Michael T.
+										<span class="review__name-confirmed --icon-greenCheckMark"></span>
+									</div>
+									<div class="review__rew">
+										“Shop.co makes online shopping so easy and enjoyable. The clothes look exactly like the pictures and fit perfectly!”
+									</div>
+								</div>
+								<!-- -6- -->
+								<div class="review__slide swiper-slide">
+									<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+									<div class="review__name">
+										Lara N.
+										<span class="review__name-confirmed --icon-greenCheckMark"></span>
+									</div>
+									<div class="review__rew">
+										“Every time I wear something from Shop.co, I get compliments. Their pieces are modern, comfortable, and affordable.”
+									</div>
+								</div>
+								<!-- -7- -->
+								<div class="review__slide swiper-slide">
+									<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+									<div class="review__name">
+										Mike L.
+										<span class="review__name-confirmed --icon-greenCheckMark"></span>
+									</div>
+									<div class="review__rew">
+										“The attention to detail in each item is amazing. You can really tell Shop.co cares about quality and design.”
+									</div>
+								</div>
+								<!-- -8- -->
+								<div class="review__slide swiper-slide">
+									<div data-fls-rating="set" data-fls-rating-value="5" class="review__stars"></div>
+									<div class="review__name">
+										Stefan k.
+										<span class="review__name-confirmed --icon-greenCheckMark"></span>
+									</div>
+									<div class="review__rew">
+										“I love how versatile their collections are. Whether it’s for work or a night out, I can always count on Shop.co.”
+									</div>
+								</div>
+								<!-- --- -->
+							</div>
+						</div>
+						<!-- --------- -->
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<section class="latest-offers">
+						<div class="latest-offers__title">STAY UP TO DATE ABOUT OUR LATEST OFFERS</div>
+						<div class="latest-offers__email email">
+							<form data-fls-form="ajax" data-fls-form-popup="popup" method="POST" action="/sendmail" class="email__form">
+								<div class="email__icon-wrap">
+									<input required type="email" name="form[email]" data-fls-form-errtext="" placeholder="Enter your email address" class="email__input input">
+									<span class="email__icon --icon-mail"></span>
+								</div>
+								<button type="submit" class="email__btn button">Subscribe to Newsletter</button>
+							</form>
+						</div>
+					</section>
+					<div class="footer__links links">
+						<div class="links__shop-co">
+							<div class="links__logo">
+								<a href="#">SHOP.CO</a>
+							</div>
+							<div class="links__text">
+								We have clothes that suits your style and which you’re proud
+                    to wear. From women to men.
+							</div>
+							<div class="links__media">
+								<a href="#" class="links__twiter --icon-twiter"></a>
+								<a href="#" class="links__facebook --icon-facebook"></a>
+								<a href="#" class="links__insta --icon-instagram"></a>
+								<a href="#" class="links__gitHub --icon-gitHab"></a>
+							</div>
+						</div>
+						<div class="links__categories">
+							<ul class="links__list">
+								<li class="links__title">Company</li>
+								<li class="links__item">
+									<a href="#">About</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Features</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Works</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Career</a>
+								</li>
+							</ul>
+							<ul class="links__list">
+								<li class="links__title">Help</li>
+								<li class="links__item">
+									<a href="#">Customer Support</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Delivery Details</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Terms & Conditions</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Privacy Policy</a>
+								</li>
+							</ul>
+							<ul class="links__list">
+								<li class="links__title">faq</li>
+								<li class="links__item">
+									<a href="#">Account</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Manage Deliveries</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Orders</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Payments</a>
+								</li>
+							</ul>
+							<ul class="links__list">
+								<li class="links__title">resources</li>
+								<li class="links__item">
+									<a href="#">Free eBooks</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Development Tutorial</a>
+								</li>
+								<li class="links__item">
+									<a href="#">How to - Blog</a>
+								</li>
+								<li class="links__item">
+									<a href="#">Youtube Playlist</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__end end">
+						<div class="end__text">Shop.co © 2000-2023, All Rights Reserved</div>
+						<div class="end__payment">
+							<div class="end__payment-item">
+								<img class="end__payment-img-pbg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAAxCAYAAABu4n+HAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAunSURBVHgB7VpLbFTXGf7PvWOPPX5jwGBhXjJOxSOFgFSpocLKLlUX3SAlUttdSDd0USnpog+gUlsJom6yKIVVUasQ2KQVTVYUHIEXVKZCYFIwoX6QgMHGb4/tufee/t+Z+9+cuZ7xzCRRwkj5zXDOPec/r//8r/OfQ/QNGFBUJmitl7VVSnGxLruvsA/9edoXasPlZo6opzLAKQUJA+J39OhR4Ktjx44558+fNz98cx1S+Y7KQ1yFb6RSFsNx0N5uY80rKpd+UIY82ly+fNmVMuAgz3M0qcy5VAKXhBR2puw2fX19ZrK1tbWqv7+fduzYQel0OtoFrqeWlhaFctRv3bpVA3doaEjNzs5qfAsO8tLO7s8G9I26K1eu6P379yv7e+/evaad4F24cEFv375d3759Wx85csQsoRiHFCOE4T/K7ow6ePCgw52bNp5Xu8WtTmzmSu37i8p1Xa0SCeV5hj0Vb0ngh/3j2+V+vLDTRPRfFtDGTRCorYjz/E+T7ytyXVKcukkXjU29Zjzyoskrj3xyCXNEhx7NeXM3hj/6aAL1a9asCbq7u4OQEDKcLpcQytYHp06dcjs6Opxv7/3O4YZU7S/rUslmxylJsr5SWFjMUHph6cP0XPrQjRv/HmRO8ZkYPupCYpSuO2ydAFlkVq0eGBhITkzNntEVAksZTz94OH4Qcz937hwYMtIb+dacd0tFniBfEAnIdU3dqp80N9b9mCoEqhIutbbUn06nVevExERR1s1LnZBq0L5QZM7S0lJi1/O7/1tfV7uRKgxGx6d+f/1a72+hoPnTZz0HnbHMvBakFJso4kbU29vr1Nev2Z2qTVYcEQD1qeT3mpubnT179phND834MkjYHzqrHA3igQMHYCGcffv2OZSseiYVYymgA9o0MzPjNDU1+eBu3lyjOMH1NlfkXR2oxppWX7x4Mcd3qEjgmS8sLDjQc/Bb2AnLu+Z4ofHg2BkxC1+3bp2uq6urTFYQ4D2vqqpSo6OjCo4YikQ8bAsSiYYUsqUw7AJFifTRo0fU3tFU0RwBaG1tddjrNGIReptUVDQA7JWpubk5p7q6Wvn8R18xTM349GUBOAKpuOECeTnCAjGbqq2trSQv7M/vjNIHPVM0/HDRfDfVu/TGa+30/e7mCOdXfxyh93smTf7SX7fTr/n7yvUZg3vpb9uz/Zwd5b4e08in2X4aG1z63c876JUfrI76+eFP7/A4Syb/5mvrc+oKQYJdf9YTGpsK3RceF3LWlkMIkR3WEcSaVgsFE6RW5IjXX20zv7MXxujwsUEa4bJ3/zkWEQITB7EAmHgTL/DK9Wle8BJt3NsQEUpwBKZjXPH+5Um62jcTfSNfCiGePHmioTAfPHig+WeO/hSGAAQnRzREP0AsuLHDPzU9Pa1KZVJM6sVwYfaEe/umLZxWQxgQAfDdFxpyCPVydwtd//su+vhfe+i9k8/Riy80Rm1Pnc0l1K27aSoGAbM/czfxOUndvHlTNzQ0iMJEEm1wDiHEYoCC7JZq1hEa8uWQLvmgsmNbyqSQcWHx46c/NenG9dWGULfuzEf4+J6e8aJvtOGwihEL1HW0V5tyEEuIK5x26+58UV3isEJk7jYL7uzsNGU4nofVhTlCkHDGZ9OpGhsby4r02HrhJu8YJi+7/8ahdpPa3LKzK0Ud65O0MVwwFvfSj/rpREg8gROnPiMm9I8A8IsBdES8DJajJKsBHQGOGB8fp6CIjrABC4MOAIyw8jx7YdzkUSZs3j+QnTwWhXL83jv5LdMWgF0+zguHvhG4ej0rXi8faMkZoxRCeJ5nFgydh3WB6yEattWICCHUEWcKsgTbyz8qBzBBWdAHbCWgQGUBHdauA3Y+l4radTBRYD3ePrI5WiTaQlSyaZarmhpdeoeJ21gGIXhDQYCART4ohBMRQk6cEA0oS5TB5GSRdFniAQUIsEXgzZCdbbkWPFvOjcINywGNDYlIxwDAKT879r+IMPYYK8Hk5KSSg5cFBf0IsI0hDvxytrtGNBqa28tyqKDkTpzO/Y5zAwCcAyJ0vvQfk4eeGOYFCo5RrJyXRdsigXamjpUo8lKeD1jX6fn5ecXBJVq7dq3q6ekRziioI5SlUQ1AWTrVblkcgQXYE4PJFLjaN5uDJ4tGCj/BJsLbv9kS6RjAmROdxqTid+atTqvPlbmCuSHibgDEn6NvKzpUJoX57OrqQqpgPhFApTLhLyc6cxYs8Pqraw1hhFCog24AJ0C5QhR2ddVGega4gi9cBYBOAUEAu7pShSfCIl9fX68zmUzcvc5BU1aFyeNOQBwq7gDms5pFo/v5HVv+QRUIs/MLwz2XLu5m8cjwmpZwdXD//v0gDPVHYf641TCiAY5AA0R2mJJlicWzCNARSHGIRBoXf0BcR+QgsF9OHK/UfGdBlQ5YhxwixUWwYZn5FCRmH5MiMOPTl3ck/joAyhInT+ThUCGNK8u8HCF+BKfwLgNH0VAQBFShMALxhkMlBRAN3JHaSMs8S1tH4B4RlBx7ODScyfhTVIEwM5++CasB8xmG9CPIe9YQqyGiARbatm0bJZNJH77608nZ41Rh4AfB1KORJyc3bdoUbNiwwZRhk5HCYuQ9awiAIyR6AwWDlA8rwccD/X+amp57lyoEMnyz/MnD0cNBMDOI2/XFxUUcHQLc1YSbbd/wL/cjpBzhLFyVsWPlMkFcKE12rqrb2jf/Yk1r0ys1yaqOZ/GuI+P5NJde7B0dHT++lJ78kANLHs/TY4UZXLt2zcdzgXCjc54KJFbqlIkAfQG2UqwsHTaj3sjg3T98Muy8VdPUtjPhBi3kuxSogC9YSbuEvK9Mnu8ezfU9X79yY0c7jlFWvh8YgqMeHqvW7L7zLHxegOs6WuoNDv+hvfngWQeMj+cGhPgC4zOm4klp5InbwsgHmaXBwcGBIdZtAXOBV1NTE+DMxOKB0CNEI1qffcmTN6orkSpYDxzHHz9+DCIkoDi5MzhZLg+CMsXcAg806oMVbHahXOf7vkYdK6kcAnNbxbpHo56VmFq9erUeGxtTzHVweojtvWmDPviwBD2lpQ2Pr2WMLGGzY/A8glQqBeuAdkavcUAGdt/DZoZvJQwnyHJtjigY3iZLPPCqBe42Tw5XZ/i5CH8h8gMbDeJgYKa+kRVMiFnSeHSIBUiECOWYOIgowRL0jbAgu/JmULTLB1KPUyQTL+A5GEI9ffoUCwaRgjBaHTBOgMMiE8DneQdyAYz2cgkcMll+QqzEFfLsB243do8HVuAQ3h3oDgVbvWrVKuIbJc0LdjAZuU8ACA5S7k/zAgj4Ek+U9ii320gdlQBQ6tyHFr8B5p+P3WbhsIKwGNYZwyx3JUJE5SAGN1J8X2i+5SAGooAQKANR2tvbieMWOX2BSGJ18kGx+kJ48s0ENyJkAxPYLBqKEakQgeOvAXM3CRHMAkt5FmAjoQOxvWBhsBlkDrfLd+7cQXg84HBegHRqagqKyUce/gfyKJM6pPLj7jyYNLsu/i39SB7l8s0R6Wg8/BhMfyAC5ggigAvw4w2NHpapAuHXQnEG+/0U2RfD4n7zQIaIEBdoZNjqUI9o4Rr7lR0gX1mpYL+aQ3rv3j0TnsfYgmP3DQIgEoXFS5zFPnbHoZD5lJugZSDcwRCEEzSWApcoaMcEkvZg1Zy2cpALYwLm6aE8D0RoEGkhfPmWPMbBNxYvBykb8JqOCWGIIE8MaQUo6EfIy9ZQT2ibOLAm4bM9ZYtOGNCJgr+huYpAFoo28PCgew4dOmRwoDS5XqMM7ZDi0BfWmb64HuNp+1DIxNAyLhwlucUXEMWoi7zGLRqCCzswuMjHn97IFTsmADmECMUvWGVyK5QLceSC1gxt49ltZSzkMZ79sNRaV45SjL+Q+SKQ447Hf+FTxGVpHEd+herkGWAc104Fz+4n3i9lN67kWGvZQVn6jNryKlcVqI/EK74rMsH4w/KV6vJOpPDD9IoPL34DXzf8H75clOl1y+e8AAAAAElFTkSuQmCC" alt="visa">
+							</div>
+							<div class="end__payment-item">
+								<img class="end__payment-img-pbg" src="data:image/png;base64,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" alt="master">
+							</div>
+							<div class="end__payment-item">
+								<img class="end__payment-img-pbg" src="data:image/png;base64,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" alt="paypal">
+							</div>
+							<div class="end__payment-item">
+								<img class="end__payment-img-pbg" src="data:image/png;base64,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" alt="applepay">
+							</div>
+							<div class="end__payment-item">
+								<img class="end__payment-img-pbg" src="data:image/png;base64,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" alt="googlepay">
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
